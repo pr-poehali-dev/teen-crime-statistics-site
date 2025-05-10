@@ -1,0 +1,173 @@
+
+importreact";
+import StatCar { Card, CardContent, CardDescriptiond from "@/components/StatCar, CardHeader, CardTitle } from "@/d";
+import { Button } from "@/components/components/ui/card";
+import { useState } from "react";
+import { cnui/button";
+import Icon } from "@/lib/utils"; from "@/components/ui/icon";
+
+// Данные для регионов
+import { Tabs, TabsContent, Tab (упрощенные,sList, TabsTrigger } from для демонстрации)
+const "@/components/ui/tabs";
+import REGION_DATA = [
+  { id: "m { Card, CardContent } from "@/components/ow", name: "ui/card";
+
+constМосква", value: 78 Dashboard = () => {
+  const [year, setYear] = useState(", change: -2 },
+  { id: "spb", name: "2024");
+
+  returnСанкт-Петербург", (
+    <div className="flex value: 65, change: - min-h-screen flex5 },
+  { id: "k-col bg-background">
+      <header className="sticky top-0 zda", name: "Краснодарский край", value: 48, change: -10 border-b bg3 },
+  { id: "sv-background/95 backdrop-blur supportsr", name: "-[backdrop-filter]:Свердловская область", value: 52bg-background/60">
+        <div className="container flex h-16 items-center, change: -1 },
+  { justify-between py-4">
+           id: "nsk", name: "Новосибирская область", value:<div className="flex items- 43, change: 2 },
+  { id: "sakcenter gap-2">
+            <Icon", name: "Республика Саха", value: 39 name="BarChart3" className="h-6 w-6 , change: -3 },
+  {text-primary" />
+            <h1 id: "krn", name: " className="text-xl font-bold trackingКрасноярский край", value: -tight">
+              Стат56, change: 7 },
+  { id: "rистика подростковой преступностиnd", name: "Ростовская
+            </h1>
+          </div> область", value: 44, change: -
+
+          <div className="1 },
+  { id: "tat", name: "Республика Татарстан", value: 37flex items-center gap-2">
+            <Button variant="outline" size="sm">
+              <Icon name="FileText, change: -4 },
+  {" className="mr-2 h-4 id: "prm", name: " w-4" />
+              МетодПермский край", value: 51,ология
+            </Button>
+            <Button variant="outline" size="sm">
+               change: 5 }
+];
+
+const<Icon name="Info" className="mr- getColor = (value:2 h-4 w-4" number) => {
+  // />
+              О проекте
+            </Button>
+          </div>
+         Градиент от светло-ф</div>
+      </header>
+
+      иолетового до тем<main className="flex-1">
+        <divно-фиолетового
+  if (value < 40 className="container py-6">
+          <div) return "bg-purple className="grid gap-6">-100 text-purple-800
+            <div className="flex";
+  if (value < 50) items-center justify-between">
+               return "bg-purple-200 text-<h2 className="text-3purple-800";
+  if (xl font-bold tracking-tight">value < 60) return "bg-purpleОбзор</h2>
+              <div-300 text-purple-900 className="flex items-center gap-2">";
+  if (value < 70)
+                <Button variant="outline" size=" return "bg-purple-400 text-sm">
+                  <Icon name="Calendarwhite";
+  return "bg-purple-" className="mr-2 h-4 w-4" />
+                  {500 text-white";
+};
+
+interface RegionalHeatmapProps {
+  year}
+                  <Icon name="ChclassName?: string;
+}
+
+const RegionalevronDown" className="ml-2 Heatmap = ({ className }: Regionalh-4 w-4" />HeatmapProps) => {
+  
+                </Button>
+                <Button variant="const [activeRegion, setActiveoutline" size="sm">
+                  <Icon name="Download" className="mr-Region] = useState<string | null>(null2 h-4 w-4");
+  
+  const sort />
+                  Скачать отчedRegions = [...REGION_DATA].sort((a, b) => b.valueёт
+                </Button>
+              </div - a.value);
+
+  return (
+    <Card className={className}>
+      <CardHeader>
+        <CardTitle className="text-lg">Региональная стат>
+            </div>
+
+            <divистика</CardTitle>
+        <Car className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <StatCard
+                title="Общее количество преступлений"
+                value="14,382dDescription>
+          Показатели подростковой преступ"
+                change={{ value: -7.2, typeности по регионам
+        </CardDescription: "decrease" }}
+                icon>
+      </CardHeader>
+      <CardContent>
+        <div className="FileBarChart"
+                delay="grid gap-3">
+          {sorte={0}
+              />
+              dRegions.map((region,<StatCard
+                title="Тя index) => (
+            <div жкие преступления"
+                value
+              key={region.id}
+              ="2,914"
+                change={{className={cn(
+                "flex justify-between p-2 value: -3.8, type: "decrease" }}
+                icon="Alert rounded-md transition-allTriangle"
+                delay={1 duration-200 animate-fade-in cursor}
+              />
+              <StatCard
+                -pointer",
+                getColor(region.valuetitle="Средний возраст"),
+                activeRegion === region.
+                value="16.2"
+                id ? "scale-105 shadowdescription="лет"
+                change={{ value: 0.3-md" : "hover:brightness, type: "increase" }}
+                icon-95"
+              )}="Users"
+                delay={
+              style={{ animationDelay: `2}
+              />
+              <StatCar${index * 0.05}s` }}d
+                title="Рецидивы
+              onMouseEnter={() =>"
+                value="21 setActiveRegion(region.id)}.5%"
+                change
+              onMouseLeave={() => setActiveReg={{ value: -2.1, typeion(null)}
+            : "decrease" }}
+                icon=">
+              <div className="fontRepeat"
+                delay={3}
+              -medium">{region.name}/>
+            </div>
+
+            <div className="grid gap-4 </div>
+              <div className="flexmd:grid-cols-2 lg: items-center space-x-4">
+                <span className="font-bolgrid-cols-7">
+              <Card className="col-spand">{region.value}</span>
+                <span 
+                  className={-4 animate-slide-up">
+                <Carcn(
+                    "text-xs px-1.dContent className="p-6">
+                  <div5 py-0.5  className="flex items-center justify-between">rounded-full",
+                    region.change
+                    <h3 className="text > 0 ? "bg-red-100 text-red--lg font-medium">Дин800" : "bg-green-100 амика по годам</h3text-green-800">
+                     
+                  )}
+                >
+                <Tabs defaultValue="all"  {region.change > 0 ? className="w-[400px]">
+                 `+${region.change}%      <TabsList>
+                        <Tab` : `${region.change}%`sTrigger value="all">}
+                </span>
+              </divВсе преступления</TabsT>
+            </div>
+          ))}rigger>
+                        <TabsTrig
+        </div>
+      </CardContentger value="property">Имуществен>
+    </Card>
+  );ные</TabsTrigger>
+                        
+};
+
+export default RegionalHeatmap;<TabsTrigger value="violent">
